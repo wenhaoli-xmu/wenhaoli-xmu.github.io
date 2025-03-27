@@ -2864,33 +2864,3 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
-
-.agenda-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-.agenda-table th, .agenda-table td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-}
-
-.agenda-table th {
-  background-color: #f8f9fa;
-  font-weight: bold;
-}
-
-.agenda-table tr:nth-child(even) {
-  background-color: #f8f9fa;
-}
-
-.agenda-table tr:hover {
-  background-color: #e9ecef;
-}
-
-.schedule h3 {
-  color: #ff8c00; /* Orange color */
-  text-align: center;
-}
