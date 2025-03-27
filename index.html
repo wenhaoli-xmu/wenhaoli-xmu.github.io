@@ -32,6 +32,10 @@
     /* Orange color for section titles */
     .section h3 {
       color: #ff8c00; /* Orange color */
+      text-align: left; /* Align titles to the left */
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ff8c00;
     }
 
     /* Smaller font size for topic cards' headings */
@@ -67,6 +71,42 @@
     .schedule h3 {
       color: #ff8c00; /* Orange color */
       text-align: center;
+    }
+
+    /* Team Section Styles */
+    .team .section-title h2 {
+      color: #ff8c00;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .team .member {
+      margin-bottom: 30px;
+    }
+
+    .team .member-img {
+      overflow: hidden;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 15px;
+    }
+
+    .team .member-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team .member-info h4 {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .team .member-info span {
+      display: block;
+      color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -127,7 +167,7 @@
         <div class="row align-items-xl-center gy-2">
 
           <div class="content">
-            <h3 style=" margin-bottom: 30px;">Workshop Introduction</h3>
+            <h3 style="margin-bottom: 30px;">Workshop Introduction</h3>
             <p align="justify">As Multimodal Large Language Models (MLLMs) continue to advance, there is a growing need to bridge the gap between their comprehension and generation capabilities within unified frameworks. This workshop <b>MLLM for Unified Comprehension and Generation (MUCG)</b>  aims to explore and address the fundamental challenges in developing truly integrated MLLMs that can seamlessly understand and create multimodal content. We focus on three interconnected areas:</p>
             <ul>
               <li>Sophisticated multimodal comprehension, targeting robust understanding of complex visual content and semantic relationships.</li>
@@ -236,7 +276,7 @@
     <!-- Schedule Section -->
     <section id="schedule" class="schedule section light-background">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h3 style="color: #ff8c00;">Agenda</h3>
+        <h3>Agenda</h3>
         <table class="agenda-table">
           <thead>
             <tr>
@@ -450,7 +490,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Organization Team</h2>
-<!--        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
       </div><!-- End Section Title -->
 
 
@@ -461,31 +500,30 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <a href="https://openreview.net/profile?id=~Jiayi_Ji1"><img src="assets/img/organizer/jijiayi.jpg" class="img-fluid"></a>
+              <a href="https://openreview.net/profile?id=~Jiayi_Ji1 "><img src="assets/img/organizer/jijiayi.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-              <a href="https://openreview.net/profile?id=~Jiayi_Ji1"><h4>Jiayi Ji</h4></a>
-              <span>National University of Singapore</span>
-<!--              <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>-->
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <a href="http://haofei.vip/"><img src="assets/img/organizer/haofei.jpeg" class="img-fluid"></a>
-            </div>
-            <div class="member-info text-center">
-              <a href="http://haofei.vip/"><h4>Hao Fei</h4></a>
+              <a href="https://openreview.net/profile?id=~Jiayi_Ji1 "><h4>Jiayi Ji</h4></a>
               <span>National University of Singapore</span>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <a href="https://openreview.net/profile?id=~Gen_Luo1"><img src="assets/img/organizer/luogen.jpg" class="img-fluid"></a>
+              <a href="http://haofei.vip/ "><img src="assets/img/organizer/haofei.jpeg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-              <a href="https://openreview.net/profile?id=~Gen_Luo1"><h4>Gen Luo</h4></a>
+              <a href="http://haofei.vip/ "><h4>Hao Fei</h4></a>
+              <span>National University of Singapore</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <a href="https://openreview.net/profile?id=~Gen_Luo1 "><img src="assets/img/organizer/luogen.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="https://openreview.net/profile?id=~Gen_Luo1 "><h4>Gen Luo</h4></a>
               <span>Shanghai Artificial Intelligence Laboratory</span>
             </div>
           </div><!-- End Team Member -->
@@ -493,10 +531,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://yaotingwangofficial.github.io"><img src="assets/img/organizer/wangyaoting.jpg" class="img-fluid"></a>
+            <a href="https://yaotingwangofficial.github.io "><img src="assets/img/organizer/wangyaoting.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://yaotingwangofficial.github.io"><h4>Yaoting Wang</h4></a>
+            <a href="https://yaotingwangofficial.github.io "><h4>Yaoting Wang</h4></a>
               <span>University of Edinburgh</span>
             </div>
           </div><!-- End Team Member -->
@@ -505,10 +543,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="hhttps://zheng-lab.cecs.anu.edu.au"><img src="assets/img/organizer/zhengliang.jpg" class="img-fluid"></a>
+            <a href="https://zheng-lab.cecs.anu.edu.au "><img src="assets/img/organizer/zhengliang.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://zheng-lab.cecs.anu.edu.au/"><h4>Liang Zheng</h4></a>
+            <a href="https://zheng-lab.cecs.anu.edu.au/ "><h4>Liang Zheng</h4></a>
               <span>Australian National University</span>
             </div>
           </div><!-- End Team Member -->
@@ -519,10 +557,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://openreview.net/profile?id=~Gen_Luo1"><img src="assets/img/organizer/linjiawei.jpg" class="img-fluid"></a>
+            <a href="https://openreview.net/profile?id=~Gen_Luo1 "><img src="assets/img/organizer/linjiawei.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://openreview.net/profile?id=~Gen_Luo1"><h4>Jiawen Lin</h4></a>
+            <a href="https://openreview.net/profile?id=~Gen_Luo1 "><h4>Jiawen Lin</h4></a>
               <span>National Tsing Hua University</span>
             </div>
           </div>
@@ -530,10 +568,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://yanshuicheng.info"><img src="assets/img/organizer/yanshuicheng.jpeg" class="img-fluid"></a>
+            <a href="https://yanshuicheng.info "><img src="assets/img/organizer/yanshuicheng.jpeg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://yanshuicheng.info"><h4>Shuicheng Yan</h4></a>
+            <a href="https://yanshuicheng.info "><h4>Shuicheng Yan</h4></a>
               <span>National University of Singapore</span>
             </div>
           </div><!-- End Team Member -->
@@ -544,10 +582,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://mac.xmu.edu.cn/rrji_en/"><img src="assets/img/organizer/jirongrong.jpg" class="img-fluid"></a>
+            <a href="https://mac.xmu.edu.cn/rrji_en/ "><img src="assets/img/organizer/jirongrong.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://mac.xmu.edu.cn/rrji_en/"><h4>Rongrong Ji</h4></a>
+            <a href="https://mac.xmu.edu.cn/rrji_en/ "><h4>Rongrong Ji</h4></a>
               <span>Xiamen University</span>
             </div>
           </div><!-- End Team Member -->
@@ -556,10 +594,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://scholar.google.com.sg/citations?user=Z9DWCBEAAAAJ&hl=en"><img src="assets/img/organizer/caidacheng.jpg" class="img-fluid"></a>
+            <a href="https://scholar.google.com.sg/citations?user=Z9DWCBEAAAAJ&hl=en "><img src="assets/img/organizer/caidacheng.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://scholar.google.com.sg/citations?user=Z9DWCBEAAAAJ&hl=en"><h4>Chua Tat-Seng</h4></a>
+            <a href="https://scholar.google.com.sg/citations?user=Z9DWCBEAAAAJ&hl=en "><h4>Chua Tat-Seng</h4></a>
               <span>National University of Singapore</span>
             </div>
           </div><!-- End Team Member -->
